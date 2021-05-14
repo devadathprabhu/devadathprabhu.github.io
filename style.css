@@ -1,7 +1,7 @@
 body {
   font-family: "Trebuchet MS", sans-serif;
   color: #272829;
-  background: rgb(230, 227, 227);
+  background: rgb(230, 228, 228);
 }
 
 a:hover {
@@ -116,20 +116,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.blink-contact {
-  animation: blinker 3s linear infinite;
-  font-family: "Papyrus", fantasy;
-  padding-top: 10px;
-  color: #45505b;
-  font-size: 20px;
-}
-
-@keyframes blinker {
-  80% {
-    opacity: 0.3;
-  }
-}
-
 #home {
   width: 100%;
   height: 100vh;
@@ -146,7 +132,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #home:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -163,33 +150,29 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Papyrus", fantasy;
 }
 
+.blink-contact {
+  animation: blinker 3s linear infinite;
+  font-family: "Papyrus", fantasy;
+  padding-top: 10px;
+  color: #2e3135;
+  font-size: 20px;
+}
+
+@keyframes blinker {
+  80% {
+    opacity: 0.3;
+  }
+}
+
 #home p {
-  color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Papyrus", fantasy;
 }
 
 #home p span {
-  color: #767b80;
+  color: #45505b;
   letter-spacing: 1px;
-}
-
-#home .social-links {
-  margin-top: 20px;
-}
-
-#home .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: #1f2022;
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
-
-#home .social-links a:hover {
-  color: #595c5f;
 }
 
 section {
@@ -211,17 +194,6 @@ section {
   position: relative;
   color: #45505b;
   font-family: "Monaco", monospace;
-}
-
-.section-title h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
 }
 
 .section-title h2::after {
