@@ -27,7 +27,7 @@
 
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 350
+    let position = window.scrollY + 450
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
