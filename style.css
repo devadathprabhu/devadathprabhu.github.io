@@ -150,17 +150,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Papyrus", fantasy;
 }
 
-.blink-contact {
-  animation: blinker 3s linear infinite;
+.my-contact {
   font-family: "Papyrus", fantasy;
   padding-top: 10px;
   color: #2e3135;
   font-size: 20px;
 }
 
+.resume-download {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.resume-download a{
+  animation: blinker 1s linear infinite;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  color: #45505b;
+}
+
 @keyframes blinker {
   80% {
-    opacity: 0.3;
+    opacity: 0.20;
   }
 }
 
