@@ -355,6 +355,13 @@ section {
   color: #45505b;
 }
 
+.accomplishments-item a:link, a:visited {
+  color: #45505b;
+}
+.accomplishments-item a:hover {
+  color: #8b8d8f;
+}
+
 .accomplishments-item p {
   margin-right: 50px;
   padding-bottom: 0;
